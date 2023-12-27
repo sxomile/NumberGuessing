@@ -14,11 +14,11 @@ def deploy(
     app_spec: algokit_utils.ApplicationSpecification,
     deployer: algokit_utils.Account,
 ) -> None:
-    from smart_contracts.artifacts.pogadjanje.client import (
-        PogadjanjeClient,
+    from smart_contracts.artifacts.Pogodak.client import (
+        PogodakClient,
     )
 
-    app_client = PogadjanjeClient(
+    app_client = PogodakClient(
         algod_client,
         creator=deployer,
         indexer_client=indexer_client,
